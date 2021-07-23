@@ -26,6 +26,9 @@
 .navbar a {
     color: inherit;
 }
+.navbar .navbar-brand{
+    margin-right: 25px;
+}
 .position-relative{
     position: relative;
 }
@@ -92,7 +95,7 @@ text-align: left;
 	content: '';
 	width: 13px;
 	height: 10px;
-	background: #fff url(/dist/assets/arrowUp.svg);
+	background: #fff url(/assets/arrowUp.svg);
 	display: block;
 	background-size: cover;
 	top: -9px;
