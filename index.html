@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Focal Addis</title>
+        <!-- Favicon-->
+        <!-- CSS only -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/buttonsAnimations.css" rel="stylesheet" />
+        <link href="css/generalButtons.css" rel="stylesheet" />
+        <link href="css/landing.css" rel="stylesheet" />
+        <link href="css/navbar.css" rel="stylesheet" />    
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand my-0 py-0">
+                    <img src="assets/logo.png" width="60" height="60" alt="">
+                  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="c_navitem"><a class="c_navlink cl-effect-12" aria-current="page" href="#"><span>Home</span></a></li>
+                        <li class="c_navitem"><a class="c_navlink cl-effect-21" aria-current="page" href="#"><span>Section</span></a></li>
+                        <li class="c_navitem"><a class="c_navlink vanilla-69" aria-current="page" href="#"><span>About</span></a></li>
+                        <li class="c_navitem"><a class="c_navlink cl-effect-12" href="#"><span>Contact</span></a></li>
+                        <li class="c_navitem dropdown">
+                            
+                            <button class="btn no_style_btn c_navlink dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" type="button">
+                                <span>
+                                    Tearline
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end custom_drpdwn" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown_items vanilla-69" href="#"><span>Action</span></a>
+                                </li>
+                                <li><a class="dropdown_items cl-effect-21" href="#">
+                                    <span>Another Action</span>
+                                </a></li>
+                                <li><a class="dropdown_items vanilla-69" href="#">
+                                    <span>Something else entirely</span>
+                                </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-md-4"><a class="c_navlink nav-link font_w_mid" aria-current="page" href="#"><span>LOGIN</span></a></li>
+                        <li class="nav-item">
+                            <a title="Get Started" class="bt_lgl bt_primary signUpBtn">Get Started</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page content-->
+        <div class="container-fluid landing1">
+            <div class="row row_container h-100">
+                <div class="col-12 col-lg-6 vertical-center">
+                    <div class="text-center promoL container">    
+                        <div class="container-fluid">
+                            <h1 class="text-wrap pb-md-3">Instant Branded Content</h1>
+                            <div class="desc lead"> Advertize your products efficiency with our creative strategy and technology.</div>    
+                        </div>
+                        <div class="container">
+                            <div class="row flex-column flex-lg-row mt-4">
+                                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                                    <a title="I'm a brand" class="bt_lgl bt_primary">I'm a brand</a>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <a title="I'm an influencer" class="bt_lgl bt_secondary">I'm an influencer</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-lg-6 border px-0 py-0">
+                    <img class="imgFeatured" src="../dist/assets/image_preview0.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid landing2">
+        </div>
+        <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            $('.dropdown').hover(function(){ 
+                $('.dropdown-toggle', this).trigger('click');
+            });
+        window.addEventListener('scroll',(e)=>{
+        const nav = document.querySelector('#mainNav');
+        if(window.pageYOffset>0){
+          nav.classList.add("add-shadow");
+        }else{
+          nav.classList.remove("add-shadow");
+        }
+      });
+        </script>
+    </body>
+</html>

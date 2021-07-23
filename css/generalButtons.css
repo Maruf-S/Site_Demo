@@ -1,0 +1,62 @@
+:root {
+    --white:white;
+    --main: #2799FA;
+    --light_main: #78bffd;
+  }
+
+
+  
+.bt_lgl{
+    display: block;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    padding: 1rem 1.6875rem;
+    
+    -moz-box-sizing: content-box !important;
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12);
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 16px;
+    white-space: nowrap;
+    -webkit-transition: color .2s ease-in,background-color .2s ease-in,border .2s ease-in;
+    -o-transition: color .2s ease-in,background-color .2s ease-in,border .2s ease-in;
+    transition: color .2s ease-in,background-color .2s ease-in,border .2s ease-in;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+    .bt_lgl.bt_primary{
+        color: var(--white);
+        background-color: var(--main);
+        border: 1px solid var(--main);    
+    }
+    .bt_lgl.bt_primary:hover{
+        background-color: var(--light_main);
+        border: 1px solid var(--light_main);
+        color: var(--white);
+    }
+    .bt_lgl.bt_secondary{
+        background-color: var(--white);
+        border: 1px solid var(--main);
+        color: var(--main);
+    }
+    .bt_lgl.bt_secondary:hover{
+        background-color: var(--white);
+        border: 1px solid var(--light_main);
+        color: var(--light_main);
+    }

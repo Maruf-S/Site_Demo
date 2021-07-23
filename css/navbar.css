@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+:root {
+    --white:white;
+    --main: #2799FA;
+    --light_main: #78bffd;
+    --link_font_weight: var(--link_font_weight);
+    --medium_font_weight:600;
+}
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: var(--white);
+    box-shadow: none;
+
+    font-family: 'Quicksand', 'Roboto';
+    text-decoration: none;
+    transition: 0.5s ease all;
+}
+
+.navbar a {
+    color: inherit;
+}
+.position-relative{
+    position: relative;
+}
+.c_navlink{
+
+padding: 15px 0;
+font-size: 15px;
+font-weight: var(--link_font_weight);
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: .5px;
+color: #3b373a;
+display: block;
+position: relative;
+white-space: nowrap;
+text-decoration: none;
+background-color: rgba(0, 0, 0, 0);
+text-align: left;
+}
+.c_navitem{
+    padding-right: 45px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: var(--link_font_weight);
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+.dropdown_items{
+    padding: 5px 0 20px;
+    font-size: 16px;
+    font-weight: var(--link_font_weight);
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: .5px;
+    color: #3b373a;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+.custom_drpdwn{
+    position: absolute;
+    top: 39px;
+    background: #fff;
+    padding: 25px 20px;
+    left: 50%;
+    /* -webkit-transform: translate3d(-35%,10px,0);
+    transform: translate3d(-35%,10px,0); */
+    border: 1px solid var(--main);
+    
+}
+.custom_drpdwn::before {
+	position: absolute;
+	content: '';
+	width: 13px;
+	height: 10px;
+	background: #fff url(/dist/assets/arrowUp.svg);
+	display: block;
+	background-size: cover;
+	top: -9px;
+	left: 46%;
+}
+.dropdown-toggle::after{
+    color: var(--main);
+}
+.no_style_btn:focus,.no_style_btn:active {
+    outline: none;
+    box-shadow: none;
+ }
+ .font_w_mid{
+     font-weight: var(--medium_font_weight) !important;
+}
+.signUpBtn{
+    padding: 12px 16px;
+}
+.add-shadow{
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12);
+    /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); */
+}
+/* Toggle the dropdown */
+/* .dropdown:hover .dropdown-menu {
+    display: block;
+} */
+
+/*
+The above css conflicts with the built in collapsable moblile menu, ise @media min-widtj 480px or use jquery
+$('.dropdown').hover(function(){ 
+    $('.dropdown-toggle', this).trigger('click'); 
+  }); */

@@ -1,0 +1,196 @@
+:root {
+    --white:white;
+    --main: #2799FA;
+    --light_main: #78bffd;
+  }
+  
+/* Effect 12: circle */
+.cl-effect-12 span{
+    position: relative;
+}
+.cl-effect-12 span::before,
+.cl-effect-12 span::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	border: 2px solid rgb(39,153,250,0.15);
+	border-radius: 50%;
+	content: '';
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+	-moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+	transform: translateX(-50%) translateY(-50%) scale(0.2);
+}
+
+.cl-effect-12 span::after {
+	width: 40px;
+	height: 40px;
+	border-width: 6px;
+	-webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+	-moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+	transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+.cl-effect-12 span:hover::before,
+.cl-effect-12 span:hover::after,
+.cl-effect-12 span:focus::before,
+.cl-effect-12 span:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+	-moz-transform: translateX(-50%) translateY(-50%) scale(1);
+	transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+/* Effect 14: border switch */
+.cl-effect-14 a {
+    position: relative;
+    margin-top: 10px;
+	padding: 0 10px;
+	height: 22px;
+	line-height: 22px;
+    
+}
+
+.cl-effect-14 a::before,
+.cl-effect-14 a::after {
+	position: absolute;
+	width: 22px;
+	height: 1px;
+	background: rgb(0, 0, 0);
+	content: '';
+	opacity: 0.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.cl-effect-14 a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.cl-effect-14 a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::before,
+.cl-effect-14 a:focus::after {
+	opacity: 1;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+
+
+
+/* Effect 21: borders slight translate */
+.cl-effect-21 span {
+    position: relative;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.cl-effect-21 span::before,
+.cl-effect-21 span::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--main);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 span::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 span::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect-21 span:hover,
+.cl-effect-21 span:focus {
+	color: var(--main);
+}
+
+.cl-effect-21 span:hover::before,
+.cl-effect-21 span:focus::before,
+.cl-effect-21 span:hover::after,
+.cl-effect-21 span:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.vanilla-69 span{
+    position: relative;
+    padding-bottom: 6px;
+}
+.vanilla-69 span::after {
+    bottom: 10px;
+    -webkit-transition: all .5s cubic-bezier(.26,.54,.32,1);
+    -o-transition: .5s cubic-bezier(.26,.54,.32,1) all;
+    transition: all .5s cubic-bezier(.26,.54,.32,1);
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-bottom: 2px solid var(--main);
+    content: " ";
+}
+.vanilla-69:hover span::after {
+    width: 100%;
+}

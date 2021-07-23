@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root {
+    --white:white;
+    --main: #2799FA;
+    --light_main: #78bffd;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', 'Roboto';
+    text-decoration: none;
+}
+body, html {
+    height:100%;
+}
+.landing1{
+    /* background-image: url(../assets/LandingInfluencer.png); */
+    background-size: cover;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.landing1 .row_container{
+    padding-top: 60px !important;
+}
+.promoL .container-fluid{
+    max-width: 60%;
+}
+.promoL .container{
+    max-width: 60%;
+}
+.promoL h1{
+    font-size: 4.5rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: normal;
+    box-sizing: border-box;
+}
+
+.promoL .desc{
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 100;
+    font-size: 1.2rem;
+    letter-spacing: normal;
+    box-sizing: border-box;
+}
+.vertical-center {
+    max-height: 85%;   
+    display: flex;
+    align-items: center;
+  }
+.landing2{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.imgFeatured{
+object-fit: cover;
+height: 100%;
+width: 100%;
+display: block !important;
+max-width: 100%;
+box-sizing: border-box;
+}
+/* Nav bar Mobile */
+@media (max-width: 992px){
+    .navbar{
+        background-color: transparent !important;
+        /* background-color: green !important; */
+    }
+    .landing1 .row_container{
+    padding-top: 0px !important;
+    padding-bottom: 3.5em;
+    /* Like <column>, but reversed */
+    flex-direction: column-reverse !important;
+    }
+    .imgFeatured{
+        max-height: 45vh;
+    } 
+    .promoL .container-fluid{
+        max-width: 100%;
+    }
+    .promoL .container{
+        max-width: 70%;
+    }
+    
+  }
